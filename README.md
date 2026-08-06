@@ -37,6 +37,16 @@ I've worked across enterprise banking (GTBank), fintech payments (Karrabo), digi
 
 ---
 
+## Certifications
+
+- [**AWS Certified Solutions Architect – Associate**](https://www.credly.com/badges/db1a9324-245c-4b9e-b10e-eafcf841df60/public_url)
+
+- [**AWS Certified CloudOps Engineer – Associate**](https://www.credly.com/badges/0b0c0244-4dee-4b3c-b58f-36e7cae2ecb0/public_url)
+
+- [**AWS Certified Machine Learning Engineer – Associate**](https://www.credly.com/badges/a41350c4-ad6c-4f95-8f77-73d030211859/public_url)
+
+---
+
 ## Featured Projects
 
 ### 1. GTWorld / GTBank — Enterprise Banking Infrastructure
