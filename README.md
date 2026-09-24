@@ -60,6 +60,8 @@ Built the AWS cloud infrastructure powering GTWorld, the digital banking platfor
 - Implemented identity and security: Cognito identity pools, Azure AD SAML federation, KMS encryption, VPC flow logs, SIEM (QRadar) integration
 - Delivered a **CI/CD pipeline factory** managing 50+ CodePipeline pipelines as Terraform-managed infrastructure, with Slack notifications and approval gates for production deployments
 
+![GTWorld / GTBank AWS architecture](diagrams/gt-bank.drawio.svg)
+
 **Tech:** AWS (ECS Fargate, EC2, API Gateway, Lambda, Cognito, WAF, CloudFront, Transit Gateway, Redshift, OpenSearch), Terraform, CodePipeline/CodeBuild
 
 ---
@@ -75,6 +77,8 @@ Prepared and managed the cloud server infrastructure for Karrabo's payment platf
 - Supported a platform processing payments via **6 methods** (card, wallet, USSD, bank transfer, direct transfer, QR code) across **8 currencies**, compliant with NIBSS NPS/HAWK standards
 - Ensured deployment reliability for a system with 257 automated tests and 75%+ statement coverage on the customer-facing checkout widget
 
+![Karrabo deployment architecture](diagrams/karrabotech.drawio.svg)
+
 **Tech:** Docker, nginx, GitHub Actions, Spring Boot, AWS Secrets Manager, multi-environment deployment (dev/staging/prod)
 
 ---
@@ -87,6 +91,8 @@ A cloud-native healthcare platform connecting patients and caregivers via AI-pow
 - Integrated Amazon Bedrock (Nova Pro) with custom-tuned Guardrails for safe, compliant health AI — blocking prescriptive medical advice and anonymizing PII
 - Built AI-powered medical document analysis using AWS Textract, Tesseract OCR, and Bedrock
 - Implemented KMS-encrypted document storage, SSM Parameter Store secrets management, and multi-channel notifications (SES, SNS, WebSocket)
+
+![FamileCare AWS architecture](diagrams/familecare.drawio.svg)
 
 **Tech:** Python/FastAPI, AWS (Bedrock, Aurora Serverless, ECS Fargate, Textract, KMS), Terraform, AWS CodePipeline
 
@@ -101,6 +107,8 @@ An AI system that analyzes raw video footage and generates structured editing gu
 - Architected a 5-container system (FastAPI, Celery/Redis workers, PostgreSQL, React frontend) with async video processing via ffmpeg
 - Planned production AWS deployment (ECS Fargate, RDS, ElastiCache) with Terraform
 
+![AI Media Helper architecture](diagrams/ai-media-helper.drawio.svg)
+
 **Tech:** Python/FastAPI, Celery, Amazon Bedrock, pgvector, AWS Strands Agents, React/TypeScript, Docker
 
 ---
@@ -112,6 +120,8 @@ Migrated a monolithic government property-acquisition system to a 14-service mic
 - Designed a shared internal Python library (`lsdpc_shared_lib`) used across all 14 FastAPI services for auth, logging, and database access
 - Built a dynamic CI/CD pipeline (GitHub Actions) that auto-discovers services and deploys via Docker across dev/UAT/prod environments
 - Integrated Interswitch payment processing and JWT-based authentication for both citizen and admin access
+
+![LSDPC backend architecture](diagrams/lsdpc.drawio.svg)
 
 **Tech:** Python/FastAPI, PostgreSQL, Docker, Traefik, GitHub Actions, JWT
 
@@ -125,6 +135,8 @@ A production-ready, fully responsive marketing site for a Nigerian investment ma
 - Implemented accessibility best practices (skip-links, ARIA live regions, reduced-motion support) and a self-hosted variable font system for performance
 - Delivered a design-token-driven SCSS system for maintainable, scalable styling
 
+![Flamestar Capital architecture](diagrams/flamestar-capital.drawio.svg)
+
 **Tech:** React 19, TypeScript, Vite, SCSS Modules, Bun
 
 ---
@@ -135,6 +147,8 @@ A lightweight tool that generates tailored interview questions from a job title 
 
 - Built a zero-backend architecture with direct client-to-Gemini API integration
 - Designed prompt engineering and response parsing to reliably return structured, role-specific output
+
+![Interview Question Generator architecture](diagrams/interview-question-generator.drawio.svg)
 
 **Tech:** React, TypeScript, Google Gemini API, Vite
 
