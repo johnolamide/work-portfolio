@@ -8,7 +8,7 @@
 
 I design and build cloud infrastructure, backend systems, and AI-integrated platforms for organizations that need production-grade reliability at scale — from Tier-1 banking infrastructure to healthcare platforms and applied AI tools. My work spans the full lifecycle: architecting AWS environments, provisioning infrastructure as code, building microservices, integrating LLM/AI capabilities, and shipping deployment pipelines that hold up in production.
 
-I've worked across enterprise banking (GTBank), fintech payments (Karrabo), digital health (FamileCare), and applied AI (AI Media Helper) — giving me a rare combination: deep cloud/infrastructure expertise paired with hands-on experience integrating AI into real backend systems.
+I've worked across enterprise banking, fintech payments, digital health (FamileCare), and applied AI (AI Media Helper) — giving me a rare combination: deep cloud/infrastructure expertise paired with hands-on experience integrating AI into real backend systems.
 
 ---
 
@@ -28,12 +28,12 @@ I've worked across enterprise banking (GTBank), fintech payments (Karrabo), digi
 
 | Role | Backed By |
 |---|---|
-| **Cloud Infrastructure Engineer** | GTBank (multi-account AWS banking infrastructure), FamileCare, LSDPC |
-| **DevOps Engineer** | Karrabo (cloud server provisioning & deployment), CI/CD pipeline design across 4+ projects |
-| **Backend Engineer (Python)** | FamileCare, LSDPC, AI Media Helper — FastAPI microservices at scale |
+| **Cloud Infrastructure Engineer** | Enterprise Banking Infrastructure (multi-account AWS), FamileCare, Government Property Platform |
+| **DevOps Engineer** | Fintech Payment Platform (cloud server provisioning & deployment), CI/CD pipeline design across 4+ projects |
+| **Backend Engineer (Python)** | FamileCare, Government Property Platform, AI Media Helper — FastAPI microservices at scale |
 | **AI/ML Integration Engineer** | AI Media Helper (RAG, agentic AI), FamileCare (Bedrock + Guardrails for healthcare) |
-| **Full-Stack Engineer** | Flamestar Capital, Interview Question Generator, Karrabo checkout widget |
-| **Fintech/Payments Engineer** | Karrabo (ISO 8583, NIBSS compliance), GTBank |
+| **Full-Stack Engineer** | Flamestar Capital, Interview Question Generator, Fintech Payment Platform checkout widget |
+| **Fintech/Payments Engineer** | Fintech Payment Platform (ISO 8583, NIBSS compliance), Enterprise Banking Infrastructure |
 
 ---
 
@@ -49,10 +49,10 @@ I've worked across enterprise banking (GTBank), fintech payments (Karrabo), digi
 
 ## Featured Projects
 
-### 1. GTWorld / GTBank — Enterprise Banking Infrastructure
+### 1. Enterprise Banking Infrastructure
 
 **Role: Cloud Engineer — Infrastructure Creation**
-Built the AWS cloud infrastructure powering GTWorld, the digital banking platform for GTBank, one of Nigeria's largest commercial banks. Delivered a multi-account, multi-environment architecture supporting millions of banking customers across mobile and web.
+Built the AWS cloud infrastructure powering the digital banking platform of a Tier-1 commercial bank. Delivered a multi-account, multi-environment architecture supporting millions of banking customers across mobile and web.
 
 - Designed and provisioned infrastructure across **4 AWS accounts** (devops, dev, pilot, prod) using **9 independently deployable Terraform modules**
 - Built networking foundation: VPC design, Transit Gateway network hub, VPC endpoints, WAF (SQL injection/XSS protection), CloudFront CDN
@@ -60,16 +60,16 @@ Built the AWS cloud infrastructure powering GTWorld, the digital banking platfor
 - Implemented identity and security: Cognito identity pools, Azure AD SAML federation, KMS encryption, VPC flow logs, SIEM (QRadar) integration
 - Delivered a **CI/CD pipeline factory** managing 50+ CodePipeline pipelines as Terraform-managed infrastructure, with Slack notifications and approval gates for production deployments
 
-![GTWorld / GTBank AWS architecture](diagrams/gt-bank.drawio.svg)
+![Enterprise Banking Infrastructure AWS architecture](diagrams/enterprise-banking-infrastructure.drawio.svg)
 
 **Tech:** AWS (ECS Fargate, EC2, API Gateway, Lambda, Cognito, WAF, CloudFront, Transit Gateway, Redshift, OpenSearch), Terraform, CodePipeline/CodeBuild
 
 ---
 
-### 2. Karrabo — Fintech Payment Platform
+### 2. Fintech Payment Platform
 
 **Role: DevOps Engineer — Cloud Server Provisioning & Deployment**
-Prepared and managed the cloud server infrastructure for Karrabo's payment platform, ensuring seamless, reliable deployment across a fintech system spanning 8 backend microservices and 3 frontend applications.
+Prepared and managed the cloud server infrastructure for a fintech payment platform, ensuring seamless, reliable deployment across a fintech system spanning 8 backend microservices and 3 frontend applications.
 
 - Provisioned and configured cloud servers to support a Spring Boot microservices backend (payment gateway, identity, wallet, terminal management, service discovery)
 - Built and maintained deployment pipelines (GitHub Actions) with environment-based branch mapping (dev/staging/prod), ensuring consistent, repeatable deployments
@@ -77,7 +77,7 @@ Prepared and managed the cloud server infrastructure for Karrabo's payment platf
 - Supported a platform processing payments via **6 methods** (card, wallet, USSD, bank transfer, direct transfer, QR code) across **8 currencies**, compliant with NIBSS NPS/HAWK standards
 - Ensured deployment reliability for a system with 257 automated tests and 75%+ statement coverage on the customer-facing checkout widget
 
-![Karrabo deployment architecture](diagrams/karrabotech.drawio.svg)
+![Fintech Payment Platform deployment architecture](diagrams/fintech-payment-platform.drawio.svg)
 
 **Tech:** Docker, nginx, GitHub Actions, Spring Boot, AWS Secrets Manager, multi-environment deployment (dev/staging/prod)
 
@@ -113,15 +113,15 @@ An AI system that analyzes raw video footage and generates structured editing gu
 
 ---
 
-### 5. LSDPC Payment Portal — Government Property Platform
+### 5. Government Property Platform
 
-Migrated a monolithic government property-acquisition system to a 14-service microservices architecture, digitizing citizen registration, property applications, payments, and appointment scheduling for the Lagos State Development and Property Corporation.
+Migrated a monolithic government property-acquisition system to a 14-service microservices architecture, digitizing citizen registration, property applications, payments, and appointment scheduling for a state government property development corporation.
 
-- Designed a shared internal Python library (`lsdpc_shared_lib`) used across all 14 FastAPI services for auth, logging, and database access
+- Designed a shared internal Python library used across all 14 FastAPI services for auth, logging, and database access
 - Built a dynamic CI/CD pipeline (GitHub Actions) that auto-discovers services and deploys via Docker across dev/UAT/prod environments
 - Integrated Interswitch payment processing and JWT-based authentication for both citizen and admin access
 
-![LSDPC backend architecture](diagrams/lsdpc.drawio.svg)
+![Government Property Platform backend architecture](diagrams/government-property-platform.drawio.svg)
 
 **Tech:** Python/FastAPI, PostgreSQL, Docker, Traefik, GitHub Actions, JWT
 
